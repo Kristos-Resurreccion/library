@@ -1,12 +1,29 @@
 * {
     --main-bg: #007777;
-    --header-bg: #005555;
+    --dark-bg: #005555;
     --header-text: #a78955;
     --body-text: #f5f1de;
 }
 
+
+
 h1 {
     font-size: 4em;
+    color: var(--header-text);
+    text-shadow: 3px 5px #000, -1px -2px var(--body-text);
+}
+
+h2 {
+    font-size: 2em;
+    color: var(--header-text);
+    text-shadow: 1px 2px #000;
+}
+
+
+
+
+p {
+    color: var(--body-text);
 }
 
 .content-wrap {
@@ -16,11 +33,18 @@ h1 {
 
 div.header {
     text-align: center;
-    background-color: var(--header-bg);
+    background-color: var(--dark-bg);
     padding: 80px 16px;
+}
 
-    h1 {
-        color: var(--header-text);
-        text-shadow: 2px 4px #000;
-    }
+.library {
+    padding: 16px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 8px;
+}
+
+.book-card {
+    padding: 16px;
+    background-color: var(--dark-bg);
 }
