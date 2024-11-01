@@ -1,0 +1,26 @@
+* {
+    --main-bg: #007777;
+    --header-bg: #005555;
+    --header-text: #a78955;
+    --body-text: #f5f1de;
+}
+
+h1 {
+    font-size: 4em;
+}
+
+.content-wrap {
+    background-color: var(--main-bg);
+    min-height: 100vh;
+}
+
+div.header {
+    text-align: center;
+    background-color: var(--header-bg);
+    padding: 80px 16px;
+
+    h1 {
+        color: var(--header-text);
+        text-shadow: 2px 4px #000;
+    }
+}
